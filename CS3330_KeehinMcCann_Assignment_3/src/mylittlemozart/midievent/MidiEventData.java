@@ -17,4 +17,24 @@ public class MidiEventData {
 	public String toString() {
 		return ("" + startEndTick+ " " + velocity + " " + note + " " + channel + " " + noteOnOff + " " + instrument);
 	}
+	
+	public int getNote() {
+		return note;
+	}
+	
+	public int getNoteOnOff() {
+		return noteOnOff;
+	}
+	
+	public int getStartEndTick() {
+		return startEndTick;
+	}
+	
+	public int getVelocity() {
+		return velocity;
+	}
+	
+	public int getChannel() {
+		return channel;
+	}
 }
