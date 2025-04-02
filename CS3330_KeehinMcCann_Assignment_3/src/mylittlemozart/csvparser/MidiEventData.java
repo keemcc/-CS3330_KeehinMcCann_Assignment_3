@@ -12,4 +12,9 @@ public class MidiEventData {
 		this.instrument = instrument;
 		this.noteOnOff = noteOnOff;
 	}
+	
+	@Override
+	public String toString() {
+		return ("" + startEndTick+ " " + velocity + " " + note + " " + channel + " " + noteOnOff + " " + instrument);
+	}
 }
