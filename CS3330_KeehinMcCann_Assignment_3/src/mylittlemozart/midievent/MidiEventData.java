@@ -1,4 +1,4 @@
-package mylittlemozart.csvparser;
+package mylittlemozart.midievent;
 
 public class MidiEventData {
 	private int startEndTick, velocity, note, channel, noteOnOff;

@@ -3,7 +3,7 @@ package mylittlemozart.application;
 import java.util.ArrayList;
 
 import mylittlemozart.csvparser.MidiCsvParser;
-import mylittlemozart.csvparser.MidiEventData;
+import mylittlemozart.midievent.MidiEventData;
 
 public class testMain {
 

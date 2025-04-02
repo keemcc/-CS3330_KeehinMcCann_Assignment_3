@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import mylittlemozart.midievent.MidiEventData;
+
 public class MidiCsvParser {
 	public static void printMidi(ArrayList<MidiEventData> midiList) {
 		if (midiList == null) {
