@@ -1,12 +1,15 @@
 package mylittlemozart.application;
 
+import java.util.ArrayList;
+
 import mylittlemozart.csvparser.MidiCsvParser;
+import mylittlemozart.csvparser.MidiEventData;
 
 public class testMain {
 
 	public static void main(String[] args) {
-		MidiCsvParser parser = new MidiCsvParser("./musicfiles/mystery_song.csv");
-		parser.printMidi();
+		ArrayList<MidiEventData> midiList = MidiCsvParser.parseCsv("./musicfiles/mystery_song.csv");
+		MidiCsvParser.printMidi(midiList);
 	}
 
 }
