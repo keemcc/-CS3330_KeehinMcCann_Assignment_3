@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import javax.sound.midi.ShortMessage;
+
 import mylittlemozart.midievent.MidiEventData;
 
 public class MidiCsvParser {
@@ -33,7 +35,7 @@ public class MidiCsvParser {
 			String line = fileInput.nextLine();
 			String[] data = line.split(",");
 			int startEndTick = Integer.parseInt(data[0].trim());
-			int noteOnOff = (data[1].trim().equals("Note_on_c")) ? 1 : 0;
+			int noteOnOff = (data[1].trim().equals("Note_on_c")) ? ShortMessage.NOTE_ON : ShortMessage.NOTE_OFF;
 			int channel = Integer.parseInt(data[2].trim());
 			int note = Integer.parseInt(data[3].trim());
 			int velocity = Integer.parseInt(data[4].trim());
