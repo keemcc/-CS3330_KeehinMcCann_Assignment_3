@@ -1,4 +1,4 @@
-package mylittlemozart.midievent;
+package mylittlemozart.midievent.concretefactories;
 
 import javax.sound.midi.InvalidMidiDataException;
 import javax.sound.midi.MidiEvent;
